@@ -120,3 +120,32 @@ h1 {
   color: #dbdbdb;
   transition: .3s;
 }
+
+@media screen and (max-width:415px) {
+
+  body {
+    background: #0D141E;
+  }
+  .todoApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    background: #0D141E;
+    text-align: center;
+    margin: 0;
+    border-radius: 0px;
+    padding-bottom: 32px;
+  }
+
+  .todoInput {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #149fff;
+    outline: none;
+    width: 250px;
+    background: transparent;
+    color: #fff;
+  }
+}

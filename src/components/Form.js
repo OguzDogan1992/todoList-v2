@@ -26,33 +26,35 @@ function Form(props) {
         <form className="todoForm" onSubmit={submit}>
             {props.edit ? (
                 <>
-                <input
-                type='text'
-                placeholder='Update'
-                value={input}
-                name='text'
-                className='todoInput edit'
-                onChange={changeSubmit}
-                ref={inputFocus}
-            />
-            <button className='todoButton edit' >Update</button>
-            </>
+                    <input
+                        type='text'
+                        placeholder='Update'
+                        value={input}
+                        name='text'
+                        className='todoInput edit'
+                        onChange={changeSubmit}
+                        ref={inputFocus}
+                    />
+                    <button className='todoButton edit' >Update</button>
+                </>
             ) :
-            (
-                <>
-                <input
-                type='text'
-                placeholder='Add a new task'
-                value={input}
-                name='text'
-                className='todoInput'
-                onChange={changeSubmit}
-                ref={inputFocus}
-            />
-            <button className='todoButton' >Add</button>
-            </>
-            )}
-            
+                (
+                    <>
+                        <input
+                            type='text'
+                            placeholder='Add a new task'
+                            value={input}
+                            name='text'
+                            className='todoInput'
+                            onChange={changeSubmit}
+                            ref={inputFocus}
+                        />
+                        <button className='todoButton' >
+                            <b>Add</b>
+                        </button>
+                    </>
+                )}
+
         </form>
     )
 }
